@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #FFD4CF;
+}
+
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-family: "montserrat";
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #F4E5D7;
+}
+
+#header-img {
+  object-fit: contain;
+}
+
+#email-section {
+  margin-top: 100px;
+}
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.icon {
+  color: #F4020B;
+  margin-right: 20px;
+}
+
+#features {
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "montserrat";
+}
+
+#video {
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0.2rem;
+  font-family: "montserrat";
+
+}
+
+.exhibition {
+  border: solid #333 3px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+
+.exhibition .btn {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.exhibition h1 {
+  padding: 1rem;
+  color: #960018;
+}
+
+.exhibition p{
+  padding: 1rem;
+}
+
+ #main-footer {
+    padding: 2.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+
+  .feature-icon {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #features {
+    margin: 20px 10px;
+  }
+
+  #pricing {
+    padding: 2rem 0.2rem;
+    flex-direction: column;
+  }
+
+  .exhibition h1 {
+    font-size: 1.5rem;
+  }
+
+  .exhibition p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.3rem 1rem;
+  }
+
+  #main-footer {
+    padding: 1.5rem 0.5rem;
+  }
+}
